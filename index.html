@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="loginpage.html" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="overview">
+            <h2>Overview</h2>
+            <div class="date-day">
+                <p>Date: <span id="currentDate"></span></p>
+                <p>Day: <span id="currentDay"></span></p>
+            </div>
+            <div class="summary">
+                <div class="summary-item">
+                    <h3>Steps</h3>
+                    <p>12,000</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Calories Burned</h3>
+                    <p>500</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Active Minutes</h3>
+                    <p>60</p>
+                </div>
+            </div>
+        </section>
+        <section class="activity-tracker">
+            <h2>Activity Tracker</h2>
+            <canvas id="activityChart"></canvas>
+        </section>
+        <section class="workout-log">
+            <h2>Workout Log</h2>
+            <ul>
+                <li>Running: 30 minutes - 300 calories burned</li>
+                <li>Yoga: 60 minutes - 200 calories burned</li>
+                <li>Strength Training: 45 minutes - 400 calories burned</li>
+            </ul>
+        </section>
+        <section class="diet-tracker">
+            <h2>Diet Tracker</h2>
+            <ul>
+                <li>Breakfast: Oatmeal with fruits - 250 calories</li>
+                <li>Lunch: Grilled chicken salad - 400 calories</li>
+                <li>Dinner: Baked salmon with vegetables - 500 calories</li>
+                <li>Snacks: Nuts and yogurt - 200 calories</li>
+            </ul>
+        </section>
+        <section class="water-intake">
+            <h2>Water Intake Tracker</h2>
+            <ul>
+                <li>8 AM: 250 ml</li>
+                <li>10 AM: 250 ml</li>
+                <li>12 PM: 250 ml</li>
+                <li>2 PM: 250 ml</li>
+                <li>4 PM: 250 ml</li>
+                <li>6 PM: 250 ml</li>
+                <li>8 PM: 250 ml</li>
+            </ul>
+        </section>
+        <section class="sleep-tracker">
+            <h2>Sleep Tracker</h2>
+            <ul>
+                <li>Monday: 7 hours</li>
+                <li>Tuesday: 6.5 hours</li>
+                <li>Wednesday: 8 hours</li>
+                <li>Thursday: 7 hours</li>
+                <li>Friday: 6 hours</li>
+                <li>Saturday: 7.5 hours</li>
+                <li>Sunday: 8 hours</li>
+            </ul>
+        </section>
+        <section class="goals">
+            <h2>Goals and Progress</h2>
+            <div class="goal">
+                <h3>Daily Step Goal</h3>
+                <progress value="12000" max="10000"></progress>
+                <p>120% achieved</p>
+            </div>
+            <div class="goal">
+                <h3>Weekly Workout Goal</h3>
+                <progress value="5" max="7"></progress>
+                <p>5 of 7 days</p>
+            </div>
+        </section>
+        <section class="profile">
+            <h2>Profile</h2>
+            <!-- <img src="Kick-buttowski-suburban-daredevil-20100119020510675-removebg-preview.png" alt="Profile Picture" class="profile-pic"> -->
+            <p>Name: John Doe</p>
+            <p>Age: 30</p>
+            <p>Height: 175 cm</p>
+            <p>Weight: 70 kg</p>
+            <p>Fitness Level: Intermediate</p>
+        </section>
+        <section id="reviews">
+            <h2>User Reviews</h2>
+            <div class="review">
+                <p>"Great app! It helped me stay on track with my fitness goals."</p>
+                <p>- User 1</p>
+            </div>
+            <div class="review">
+                <p>"The activity tracker is very accurate and easy to use."</p>
+                <p>- User 2</p>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
